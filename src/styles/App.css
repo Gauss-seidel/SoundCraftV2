@@ -1,0 +1,104 @@
+:root {
+  /* Brand Colors */
+  --sc-primary: #00AEEF;
+  --sc-secondary: #8E24AA;
+  --sc-accent: #3F51B5;
+  --sc-deep: #4A148C;
+
+  /* Neutrals */
+  --sc-text: #ffffff;
+  --sc-bg: #1a1919;
+}
+
+body {
+  color: var(--sc-text);
+  background: var(--sc-bg);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.index {
+  height: 100vh;
+  background-image: url("../assets/scback.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;            
+  display: flex;            
+  flex-direction: column;     
+  justify-content: flex-end;       
+  text-align: center;
+}
+
+
+#root {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  animation: logo-pulse 1.5s infinite;
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--sc-primary);
+  color: var(--sc-bg);
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: var(--sc-accent);
+}
+
+/* Typography */
+.text-title {
+  color: var(--sc-deep);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.phrase {
+  margin-bottom: 20px;
+}
+/* Backgrounds */
+.bg-gradient {
+  background: linear-gradient(90deg, var(--sc-primary), var(--sc-secondary));
+}
+
+/* Animations */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-pulse {
+  0% {
+    filter: drop-shadow(0 0 0em var(--sc-primary));
+  }
+  50% {
+    filter: drop-shadow(0 0 2em var(--sc-secondary));
+  }
+  100% {
+    filter: drop-shadow(0 0 0em var(--sc-primary));
+  }
+}
