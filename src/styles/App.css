@@ -102,3 +102,73 @@ body {
     filter: drop-shadow(0 0 0em var(--sc-primary));
   }
 }
+
+.containeridex {
+  display: flex;            
+  justify-content: center; 
+  align-items: center;      
+  flex-direction: row;     
+  text-align: center;       
+  height: 100%;             
+}
+
+
+.logoSoundCraftEvent{
+  max-width: 11%;
+  border: var(--sc-primary) solid;
+  border-radius: 20px;
+  margin-right: 20px;
+  transition: 0.2s ease;
+}
+
+
+.logoSoundCraftAcademy{
+  max-width: 7.4%;
+  border: var(--sc-primary) solid;
+  border-radius: 20px;
+  transition: 0.2s ease;
+}
+
+.logoSoundCraftEvent:hover,
+.logoSoundCraftAcademy:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 
+    0 0 10px var(--sc-secondary),
+    0 0 20px var(--sc-secondary),
+    0 0 35px var(--sc-secondary);
+}
+
+.titleType {
+  font-family: monospace;
+  font-size: 9rem;
+  color: var(--sc-text);
+  text-shadow: 
+    0 0 5px var(--sc-secondary),
+    0 0 10px var(--sc-secondary),
+    0 0 20px var(--sc-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid var(--neon-color);
+
+  width: 0ch;
+  animation: typing 2s steps(13) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0ch; }
+  to   { width: 13ch; }  /* <- SoundCraft V2 = 13 caracteres */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.titleContainer{
+  display: flex;
+  justify-content: center;   /* centra horizontalmente */
+  align-items: center;       /* centra verticalmente */
+  height: 100vh;             /* ocupa toda la pantalla */
+}

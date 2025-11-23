@@ -1,22 +1,26 @@
-import sclogo from './assets/sclogo.png'
+import academialogo from './assets/scacademylogo.png'
+import eventlogo from './assets/sceventlogo.png'
 import "./styles/App.css"
 
 function App() {
 
   return (
     <div className="index">
-
-      <h1>SoundCraft V2</h1>
-      
+      <div className='titleContainer'>
+      <h1 className='titleType' >SoundCraft V2</h1>
+      </div>
       <p className="frase">
       Donde otros escuchan ruido, nosotros enseñamos a crear experiencia.
       </p>
-      <p className="frase">
+      <p className="phrase">
       ---Página en desarrollo---
       </p>
-      <div>
-        <a href="https://www.instagram.com/soundcraft_py/" target="_blank">
-          <img src={sclogo} className="logo Sound Craft" alt="SC logo" />
+      <div className='containerindex'>
+        <a href="#" target="_blank">
+          <img src={eventlogo} className="logoSoundCraftEvent" alt="SC Event" />
+        </a>
+        <a href="#" target="_blank">
+          <img src={academialogo} className="logoSoundCraftAcademy" alt="SC Academy" />
         </a>
       </div>
     </div>
