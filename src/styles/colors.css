@@ -1,0 +1,11 @@
+:root {
+    /* Brand Colors */
+    --sc-primary: #00AEEF;
+    --sc-secondary: #8E24AA;
+    --sc-accent: #3F51B5;
+    --sc-deep: #4A148C;
+  
+    /* Neutrals */
+    --sc-text: #ffffff;
+    --sc-bg: #1a1919;
+  }

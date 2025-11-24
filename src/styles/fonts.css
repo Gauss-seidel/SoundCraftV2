@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'FuenteTitulos';
+    src: url('/fonts/Ethnocentric.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

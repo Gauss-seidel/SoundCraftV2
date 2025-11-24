@@ -1,14 +1,4 @@
-:root {
-  /* Brand Colors */
-  --sc-primary: #00AEEF;
-  --sc-secondary: #8E24AA;
-  --sc-accent: #3F51B5;
-  --sc-deep: #4A148C;
-
-  /* Neutrals */
-  --sc-text: #ffffff;
-  --sc-bg: #1a1919;
-}
+@import './fonts.css';
 
 body {
   color: var(--sc-text);
@@ -26,7 +16,7 @@ body {
   background-position: center;            
   display: flex;            
   flex-direction: column;     
-  justify-content: flex-end;       
+  justify-content: center;       
   text-align: center;
 }
 
@@ -37,6 +27,13 @@ body {
   padding: 0;
   text-align: center;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'FuenteTitulos', sans-serif !important;
+  font-size: 3rem;
+  color: var(--sc-text);
+}
+
 
 /* Logo styles */
 .logo {
@@ -142,8 +139,8 @@ body {
 }
 
 .titleType {
-  font-family: monospace;
-  font-size: 9rem;
+  font-family: 'FuenteTitulos', sans-serif;
+  font-size: 5rem;
   color: var(--sc-text);
   text-shadow: 
     0 0 5px var(--sc-secondary),
@@ -170,5 +167,5 @@ body {
   display: flex;
   justify-content: center;   /* centra horizontalmente */
   align-items: center;       /* centra verticalmente */
-  height: 100vh;             /* ocupa toda la pantalla */
+  height: 30vh;             /* ocupa toda la pantalla */
 }
