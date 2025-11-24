@@ -1,19 +1,14 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import ScEvents from "./pages/scevents";
 import ScAcademy from "./pages/scacademy";
 import Staff from './pages/staff';
+import SoundCraftNav from "./components/SoundCraftNav.tsx";
 
 function App() {
   return (
     <div>
-      {/* Menú que se ve en todas las páginas */}
-      <nav>
-        {/*<Link to="/">Inicio</Link> |  
-        <Link to="/scevents"> SoundCraft Eventos</Link> | 
-        <Link to="/scacademy" > SoundCraf Academy</Link>
-        */}
-      </nav>
+      <SoundCraftNav />
 
       {/* Rutas */}
       <Routes>
