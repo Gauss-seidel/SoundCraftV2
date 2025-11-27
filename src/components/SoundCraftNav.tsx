@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/nav.css';
+import '../styles/stylesComponents/nav.css';
 import '../styles/colors.css';
 
 export default function SoundCraftNav() {

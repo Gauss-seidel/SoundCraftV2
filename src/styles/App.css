@@ -142,10 +142,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'FuenteTitulos', sans-serif;
   font-size: 5rem;
   color: var(--sc-text);
-  text-shadow: 
-    0 0 5px var(--sc-secondary),
-    0 0 10px var(--sc-secondary),
-    0 0 20px var(--sc-secondary);
+
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid var(--neon-color);

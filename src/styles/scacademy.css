@@ -1,6 +1,6 @@
 .scacademybody {
-    height: 100vh;
-    background-image: url("../assets/scback.png");
+    min-height: 10vh;
+    background-image: url("../assets/academyback.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;            
