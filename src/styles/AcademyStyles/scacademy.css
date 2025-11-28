@@ -1,0 +1,21 @@
+.scacademybody {
+  min-height: 100vh;           
+  display: flex;            
+  flex-direction: column;     
+  justify-content: flex-start;       
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+main {
+  position: relative;
+  z-index: 10;
+}
+
+.subrayado {
+  display: inline-block;   
+  border-bottom: 2px solid var(--sc-primary); 
+  padding-bottom: 4px;
+  text-align: center;            
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/stylesComponents/GallerySection.css';
+import '../../styles/AcademyStyles/GallerySection.css';
 
 interface Event {
   id: number;
@@ -65,12 +65,12 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
                     <p className="gallery-description">
                       {evento.descripcion || 'Un evento memorable de DJ Academy'}
                     </p>
-                    <button
+                    {/*<button
                       className="gallery-button"
                       onClick={() => onViewEvent(evento.id)}
                     >
-                      Ver más
-                    </button>
+                      Detalles
+                    </button> */}
                   </div>
                 )}
               </div>

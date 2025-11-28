@@ -1,0 +1,106 @@
+@import url(../fonts.css);
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.staff-section {
+  width: 100%;
+  max-width: 100vw;
+  padding: 60px 20px;
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(135deg, rgba(26, 25, 25, 0.95) 0%, rgba(15, 15, 30, 0.95) 100%);
+  overflow-x: hidden;
+}
+
+.staff-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Header */
+.staff-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.staff-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--sc-primary), var(--sc-secondary), var(--sc-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.2;
+  filter: drop-shadow(0 0 20px rgba(0, 174, 239, 0.2));
+}
+
+.staff-subtitle {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Grid */
+.staff-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .staff-section {
+    padding: 80px 30px;
+  }
+
+  .staff-header {
+    margin-bottom: 3.5rem;
+  }
+
+  .staff-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .staff-section {
+    padding: 100px 40px;
+  }
+
+  .staff-header {
+    margin-bottom: 4rem;
+  }
+
+  .staff-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* Desktop muy grande */
+@media (min-width: 1440px) {
+  .staff-section {
+    padding: 120px 50px;
+  }
+
+  .staff-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+}

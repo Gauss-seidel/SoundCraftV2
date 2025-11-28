@@ -1,0 +1,211 @@
+
+  .bg-home-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--sc-bg) 0%, #0f0f1e 50%, var(--sc-bg) 100%);
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  /* Grid Overlay */
+  .bg-home-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.02;
+    background-image: linear-gradient(
+        0deg,
+        transparent 24%,
+        rgba(0, 174, 239, 0.05) 25%,
+        rgba(0, 174, 239, 0.05) 26%,
+        transparent 27%,
+        transparent 74%,
+        rgba(0, 174, 239, 0.05) 75%,
+        rgba(0, 174, 239, 0.05) 76%,
+        transparent 77%,
+        transparent
+      ),
+      linear-gradient(
+        90deg,
+        transparent 24%,
+        rgba(0, 174, 239, 0.05) 25%,
+        rgba(0, 174, 239, 0.05) 26%,
+        transparent 27%,
+        transparent 74%,
+        rgba(0, 174, 239, 0.05) 75%,
+        rgba(0, 174, 239, 0.05) 76%,
+        transparent 77%,
+        transparent
+      );
+    background-size: 80px 80px;
+  }
+  
+  /* Orbs */
+  .bg-home-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    mix-blend-mode: screen;
+  }
+  
+  /* Left side (Academy - Cyan/Purple) */
+  .bg-home-orb-left {
+    left: -150px;
+  }
+  
+  .bg-home-orb-1 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, var(--sc-primary) 0%, transparent 70%);
+    top: 50px;
+    opacity: 0.12;
+    animation: float-left 25s ease-in-out infinite;
+  }
+  
+  .bg-home-orb-2 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--sc-secondary) 0%, transparent 70%);
+    bottom: 100px;
+    opacity: 0.1;
+    animation: float-left 30s ease-in-out infinite 2s;
+  }
+  
+  /* Right side (Events - Deep/Accent) */
+  .bg-home-orb-right {
+    right: -150px;
+  }
+  
+  .bg-home-orb-3 {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, var(--sc-accent) 0%, transparent 70%);
+    top: 100px;
+    opacity: 0.1;
+    animation: float-right 28s ease-in-out infinite;
+  }
+  
+  .bg-home-orb-4 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, var(--sc-deep) 0%, transparent 70%);
+    bottom: 50px;
+    opacity: 0.08;
+    animation: float-right 32s ease-in-out infinite 3s;
+  }
+  
+  /* Center line */
+  .bg-home-center-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(0, 174, 239, 0.15) 20%,
+      rgba(0, 174, 239, 0.15) 80%,
+      transparent 100%
+    );
+    transform: translateX(-50%);
+  }
+  
+  /* Radial overlay */
+  .bg-home-radial-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 0%,
+      rgba(26, 25, 25, 0.4) 100%
+    );
+  }
+  
+  /* Animated dots */
+  .bg-home-dots {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--sc-primary);
+    opacity: 0.3;
+    animation: pulse-dot 3s ease-in-out infinite;
+  }
+  
+  .dot-1 {
+    left: 15%;
+    top: 25%;
+    animation-delay: 0s;
+  }
+  
+  .dot-2 {
+    right: 15%;
+    top: 30%;
+    background: var(--sc-secondary);
+    animation-delay: 0.5s;
+  }
+  
+  .dot-3 {
+    left: 20%;
+    bottom: 20%;
+    background: var(--sc-accent);
+    animation-delay: 1s;
+  }
+  
+  .dot-4 {
+    right: 20%;
+    bottom: 25%;
+    background: var(--sc-deep);
+    animation-delay: 1.5s;
+  }
+  
+  /* Animations */
+  @keyframes float-left {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(20px, -30px);
+    }
+    50% {
+      transform: translate(0, -60px);
+    }
+    75% {
+      transform: translate(-20px, -30px);
+    }
+  }
+  
+  @keyframes float-right {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-20px, -30px);
+    }
+    50% {
+      transform: translate(0, -60px);
+    }
+    75% {
+      transform: translate(20px, -30px);
+    }
+  }
+  
+  @keyframes pulse-dot {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.3);
+    }
+  }

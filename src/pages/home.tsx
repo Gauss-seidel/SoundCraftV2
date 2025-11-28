@@ -4,15 +4,18 @@ import '../styles/colors.css';
 import '../styles/fonts.css';
 import "../styles/App.css";
 import { Link } from 'react-router-dom';
+import BackgroundHome from '../components/BackGroundHome';
 
 export default function Home() {
   return (
+    <>
+    <BackgroundHome />
     <div className="index">
       <div className='titleContainer'>
-        <h1 className='titleType'>SoundCraft V2</h1>
+        <h1 className='titleType'>SoundCraft Py</h1>
       </div>
       <p className="phrase">
-        Donde otros escuchan ruido, nosotros enseñamos a crear experiencia.
+      Tu música, nuestro mundo.
       </p>
       <p className="phrase">
         ---Página en desarrollo---
@@ -26,5 +29,7 @@ export default function Home() {
         </Link>
         </div>
     </div>
+    </>
   );
+  
 }

@@ -1,25 +1,35 @@
 @import './fonts.css';
 
+:root {
+  /* Brand Colors */
+  --sc-primary: #00AEEF;
+  --sc-secondary: #8E24AA;
+  --sc-accent: #3F51B5;
+  --sc-deep: #4A148C;
+
+  /* Neutrals */
+  --sc-text: #ffffff;
+  --sc-bg: #1a1919;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   color: var(--sc-text);
   background: var(--sc-bg);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
   padding: 0;
 }
-
-.index {
-  height: 100vh;
-  background-image: url("../assets/scback.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;            
-  display: flex;            
-  flex-direction: column;     
-  justify-content: center;       
-  text-align: center;
-}
-
 
 #root {
   width: 100%;
@@ -28,51 +38,104 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'FuenteTitulos', sans-serif !important;
-  font-size: 3rem;
-  color: var(--sc-text);
+/* Index Page */
+.index {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  z-index: 10;
 }
 
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'FuenteTitulos', sans-serif !important;
+  color: var(--sc-text);
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 6vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 4vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 3.5vw, 1.75rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+}
 
 /* Logo styles */
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: clamp(4em, 10vw, 6em);
+  padding: clamp(1em, 2vw, 1.5em);
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   animation: logo-pulse 1.5s infinite;
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 /* Buttons */
 .btn-primary {
-  background-color: var(--sc-primary);
+  background: linear-gradient(135deg, var(--sc-primary), var(--sc-accent));
   color: var(--sc-bg);
   border: none;
-  padding: 0.75em 1.5em;
+  padding: clamp(0.5em, 1.5vw, 0.75em) clamp(1em, 2.5vw, 1.5em);
   border-radius: 0.5em;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 174, 239, 0.2);
 }
+
 .btn-primary:hover {
-  background-color: var(--sc-accent);
+  background: linear-gradient(135deg, var(--sc-secondary), var(--sc-primary));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 174, 239, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
 }
 
 /* Typography */
 .text-title {
   color: var(--sc-deep);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
 
 .phrase {
-  margin-bottom: 20px;
+  margin-bottom: clamp(15px, 3vw, 20px);
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
 }
+
 /* Backgrounds */
 .bg-gradient {
   background: linear-gradient(90deg, var(--sc-primary), var(--sc-secondary));
@@ -100,69 +163,213 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.containeridex {
-  display: flex;            
-  justify-content: center; 
-  align-items: center;      
-  flex-direction: row;     
-  text-align: center;       
-  height: 100%;             
+/* Container */
+.containerindex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  gap: clamp(15px, 4vw, 40px);
+  flex-wrap: wrap;
+  padding: clamp(20px, 3vw, 40px);
+  position: relative;
+  z-index: 10;
+  
 }
 
-
-.logoSoundCraftEvent{
-  max-width: 11%;
-  border: var(--sc-primary) solid;
+/* Logos */
+.logoSoundCraftEvent,
+.logoSoundCraftAcademy {
+  border: 2px solid var(--sc-primary);
   border-radius: 20px;
-  margin-right: 20px;
-  transition: 0.2s ease;
+  transition: all 0.3s ease;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
 }
 
-
-.logoSoundCraftAcademy{
-  max-width: 7.4%;
-  border: var(--sc-primary) solid;
-  border-radius: 20px;
-  transition: 0.2s ease;
+.logoSoundCraftAcademy {
+  width: auto;
+  height: clamp(90px, 15vw, 200px); 
 }
+
+.logoSoundCraftEvent {
+  width: auto;
+  height: clamp(90px, 15vw, 200px); 
+}
+
 
 .logoSoundCraftEvent:hover,
 .logoSoundCraftAcademy:hover {
   transform: scale(1.05);
   opacity: 0.9;
   cursor: pointer;
-  transition: 0.2s ease;
-  box-shadow: 
+  box-shadow:
     0 0 10px var(--sc-secondary),
     0 0 20px var(--sc-secondary),
     0 0 35px var(--sc-secondary);
 }
 
+/* Typing Title */
 .titleType {
   font-family: 'FuenteTitulos', sans-serif;
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 8vw, 5rem);
   color: var(--sc-text);
-
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid var(--neon-color);
-
+  border-right: 3px solid var(--sc-primary);
   width: 0ch;
   animation: typing 2s steps(13) forwards, blink 0.7s infinite;
+  letter-spacing: clamp(1px, 0.5vw, 2px);
+  position: relative;
+  z-index: 10;
 }
 
 @keyframes typing {
-  from { width: 0ch; }
-  to   { width: 13ch; }  /* <- SoundCraft V2 = 13 caracteres */
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 13ch;
+  }
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
 
-.titleContainer{
+/* Title Container */
+.titleContainer {
   display: flex;
-  justify-content: center;   /* centra horizontalmente */
-  align-items: center;       /* centra verticalmente */
-  height: 30vh;             /* ocupa toda la pantalla */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: clamp(20vh, 30vh, 40vh);
+  padding: clamp(20px, 3vw, 40px);
+  position: relative;
+  z-index: 10;
+}
+
+/* Responsive Design */
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .index {
+    min-height: 100vh;
+    padding: 15px;
+  }
+
+  .containeridex {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 15px;
+  }
+
+  .logoSoundCraftEvent,
+  .logoSoundCraftAcademy {
+    border-radius: 15px;
+  }
+
+  .titleType {
+    border-right-width: 2px;
+  }
+
+  .titleContainer {
+    min-height: 25vh;
+    padding: 15px;
+  }
+}
+
+/* Small Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .index {
+    padding: 20px;
+  }
+
+  .containeridex {
+    gap: 25px;
+    padding: 25px 20px;
+  }
+
+  .titleContainer {
+    min-height: 28vh;
+    padding: 20px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .index {
+    padding: 30px;
+  }
+
+  .containeridex {
+    gap: 30px;
+    padding: 30px 25px;
+  }
+
+  .titleContainer {
+    min-height: 30vh;
+    padding: 30px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    font-size: 16px;
+  }
+
+  .index {
+    padding: 40px;
+  }
+
+  .containeridex {
+    gap: 40px;
+    padding: 40px 30px;
+  }
+
+  .titleContainer {
+    min-height: 30vh;
+    padding: 40px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1441px) {
+  body {
+    font-size: 18px;
+  }
+
+  .index {
+    padding: 50px;
+  }
+
+  .containeridex {
+    gap: 50px;
+    padding: 50px 40px;
+  }
+
+  .titleContainer {
+    min-height: 30vh;
+    padding: 50px;
+  }
 }

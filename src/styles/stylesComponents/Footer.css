@@ -5,6 +5,8 @@
     border-top: 2px solid var(--sc-primary);
     color: var(--sc-text);
     margin-top: 3rem;
+    position: relative;
+    z-index: 10;
   }
   
   .footer-container {
@@ -77,6 +79,7 @@
   .footer-socials {
     display: flex;
     gap: 1rem;
+    justify-content: center;
   }
   
   .social-link {

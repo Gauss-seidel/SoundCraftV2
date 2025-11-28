@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 import '../styles/stylesComponents/Footer.css';
 
@@ -8,30 +9,35 @@ interface SocialLink {
   url: string;
 }
 
+interface QuickLink {
+  label: string;
+  to: string;       //  ← antes era onClick
+}
+
 interface FooterProps {
   companyName?: string;
   email?: string;
   phone?: string;
   address?: string;
   socialLinks?: SocialLink[];
-  quickLinks?: { label: string; onClick: () => void }[];
+  quickLinks?: QuickLink[];
 }
 
 export const Footer: React.FC<FooterProps> = ({
-  companyName = 'DJ Academy',
+  companyName = 'SC Academy',
   email = 'info@djacademy.com',
   phone = '+1 234 567 8900',
-  address = 'Calle Principal 123, Ciudad',
+  address = 'Wenceslao Lopez y, San Lorenzo 111421',
   socialLinks = [
-    { name: 'Facebook', icon: <Facebook size={20} />, url: '#' },
-    { name: 'Instagram', icon: <Instagram size={20} />, url: '#' },
+    { name: 'Facebook', icon: <Facebook size={20} />, url: 'https://www.facebook.com/p/Soundcraft-61552205183757/' },
+    { name: 'Instagram', icon: <Instagram size={20} />, url: 'https://www.instagram.com/soundcraft_py/' },
     { name: 'Youtube', icon: <Youtube size={20} />, url: '#' },
   ],
   quickLinks = [
-    { label: 'Inicio', onClick: () => {} },
-    { label: 'Cursos', onClick: () => {} },
-    { label: 'Sobre Nosotros', onClick: () => {} },
-    { label: 'Contacto', onClick: () => {} },
+    { label: 'Inicio', to: '/' },
+    { label: 'Cursos', to: '/scacademy/cursos' },
+    { label: 'Contacto', to: '/scacademy/contacto' },
+    { label: 'Staff', to: '/scacademy/staff' },
   ],
 }) => {
   const currentYear = new Date().getFullYear();
@@ -41,6 +47,7 @@ export const Footer: React.FC<FooterProps> = ({
       <div className="footer-container">
         {/* Sección Superior */}
         <div className="footer-top">
+
           {/* Información */}
           <div className="footer-section">
             <h4 className="footer-title">{companyName}</h4>
@@ -65,13 +72,9 @@ export const Footer: React.FC<FooterProps> = ({
             <h4 className="footer-title">Enlaces Rápidos</h4>
             <div className="footer-links">
               {quickLinks.map((link, index) => (
-                <button
-                  key={index}
-                  className="footer-link"
-                  onClick={link.onClick}
-                >
+                <Link key={index} to={link.to} className="footer-link">
                   {link.label}
-                </button>
+                </Link>
               ))}
             </div>
           </div>
@@ -86,6 +89,8 @@ export const Footer: React.FC<FooterProps> = ({
                   href={social.url}
                   className="social-link"
                   title={social.name}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {social.icon}
                 </a>

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/stylesComponents/CourseCard.css';
+import '../../styles/AcademyStyles/CourseCard.css';
 
 interface CourseCardProps {
   id: number;

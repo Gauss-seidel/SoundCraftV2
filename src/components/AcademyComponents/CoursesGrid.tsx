@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/stylesComponents/CoursesGrid.css';
+import '../../styles/AcademyStyles/CoursesGrid.css';
 
 interface Course {
   id: number;

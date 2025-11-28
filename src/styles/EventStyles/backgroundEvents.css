@@ -1,0 +1,236 @@
+
+.bg-abstract-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1919 50%, #0f0f1e 100%);
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Grid */
+.bg-abstract-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.01;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      rgba(0, 174, 239, 0.05) 25%,
+      rgba(0, 174, 239, 0.05) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(0, 174, 239, 0.05) 75%,
+      rgba(0, 174, 239, 0.05) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      rgba(0, 174, 239, 0.05) 25%,
+      rgba(0, 174, 239, 0.05) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(0, 174, 239, 0.05) 75%,
+      rgba(0, 174, 239, 0.05) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 120px 120px;
+}
+
+/* Background orbs */
+.bg-abstract-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  mix-blend-mode: screen;
+}
+
+.bg-abstract-orb-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--sc-primary) 0%, transparent 70%);
+  top: -200px;
+  right: -100px;
+  opacity: 0.05;
+  animation: abstract-float 45s ease-in-out infinite;
+}
+
+.bg-abstract-orb-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--sc-accent) 0%, transparent 70%);
+  bottom: -150px;
+  left: -50px;
+  opacity: 0.04;
+  animation: abstract-float 50s ease-in-out infinite 5s;
+}
+
+/* Geometric shapes */
+.abstract-shapes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.abstract-rect {
+  fill: none;
+  stroke: var(--sc-primary);
+  stroke-width: 1.5;
+  opacity: 0.15;
+}
+
+.abstract-rect-2 {
+  stroke: var(--sc-accent);
+  opacity: 0.1;
+}
+
+.shape-group {
+  animation: shape-rotate 15s linear infinite;
+  transform-origin: center;
+  opacity: 0.8;
+}
+
+.shape-1 {
+  animation-duration: 18s;
+  animation-direction: reverse;
+}
+
+.shape-2 {
+  animation-duration: 20s;
+}
+
+.shape-3 {
+  animation-duration: 25s;
+  animation-direction: reverse;
+}
+
+/* Corner rectangles */
+.corner-rect {
+  fill: none;
+  stroke: var(--sc-secondary);
+  stroke-width: 1;
+  opacity: 0.1;
+  animation: corner-pulse 3s ease-in-out infinite;
+}
+
+.corner-1 {
+  animation-delay: 0s;
+}
+
+.corner-2 {
+  stroke: var(--sc-primary);
+  animation-delay: 0.5s;
+}
+
+.corner-3 {
+  stroke: var(--sc-accent);
+  animation-delay: 1s;
+}
+
+.corner-4 {
+  stroke: var(--sc-secondary);
+  animation-delay: 1.5s;
+}
+
+/* Pulsing dots */
+.abstract-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--sc-primary);
+  opacity: 0.3;
+  animation: dot-pulse 2.5s ease-in-out infinite;
+}
+
+.abstract-dot-1 {
+  top: 20%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.abstract-dot-2 {
+  top: 75%;
+  right: 20%;
+  background: var(--sc-accent);
+  animation-delay: 0.5s;
+}
+
+.abstract-dot-3 {
+  top: 40%;
+  right: 10%;
+  background: var(--sc-secondary);
+  animation-delay: 1s;
+}
+
+.abstract-dot-4 {
+  bottom: 20%;
+  left: 20%;
+  background: var(--sc-primary);
+  animation-delay: 1.5s;
+}
+
+/* Overlay */
+.bg-abstract-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(10, 10, 10, 0.6) 100%
+  );
+}
+
+/* Animations */
+@keyframes abstract-float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(15px, -20px);
+  }
+  50% {
+    transform: translate(0, -40px);
+  }
+  75% {
+    transform: translate(-15px, -20px);
+  }
+}
+
+@keyframes shape-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes corner-pulse {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes dot-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.3);
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/stylesComponents/EventCard.css';
+import '../../styles/AcademyStyles/EventCard.css';
 
 interface EventCardProps {
   id: number;

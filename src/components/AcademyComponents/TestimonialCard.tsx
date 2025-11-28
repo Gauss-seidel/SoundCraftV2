@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/stylesComponents/TestimonialCard.css';
+import '../../styles/AcademyStyles/TestimonialCard.css';
 
 interface TestimonialCardProps {
   nombre: string;
