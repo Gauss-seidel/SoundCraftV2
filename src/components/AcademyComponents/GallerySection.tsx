@@ -21,7 +21,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
   titulo = 'Galería de Eventos',
   subtitulo = 'Revive los momentos más destacados',
   eventos,
-  onViewEvent,
+  //onViewEvent,
 }) => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
