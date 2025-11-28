@@ -46,7 +46,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
               onMouseLeave={() => setHoveredId(null)}
             >
               <div className="gallery-image">
-                <div className="gallery-emoji">{evento.imagen || '🎉'}</div>
+              {evento.imagen ? (
+                <img src={evento.imagen} alt={evento.titulo} className="gallery-img" />) : (<div className="gallery-emoji">🎉</div>)}
                 <div className="gallery-overlay"></div>
               </div>
 

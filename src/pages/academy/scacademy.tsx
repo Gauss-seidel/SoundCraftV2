@@ -6,6 +6,10 @@ import { GallerySection } from '../../components/AcademyComponents/GallerySectio
 import { TestimonialCard } from '../../components/AcademyComponents/TestimonialCard';
 import { Footer } from '../../components/Footer';
 import Background from '../../components/AcademyComponents/BackGroundAcademy';
+import EventImage1 from '../../assets/AcademyAssets/events/event1.png'
+import EventImage2 from '../../assets/AcademyAssets/events/event2.png'
+import EventImage3 from '../../assets/AcademyAssets/events/event3.png'
+import EventImage4 from '../../assets/AcademyAssets/events/event4.png'
 
 export default function ScAcademy() {
 
@@ -13,31 +17,31 @@ export default function ScAcademy() {
   const eventos = [
     {
       id: 1,
-      titulo: 'Festival DJ 2024',
-      imagen: '🎵',
-      fecha: 'Junio 2024',
-      descripcion: 'Gran evento con nuestros estudiantes'
+      titulo: 'Habilitado Curso DJ',
+      imagen: EventImage1,
+      fecha: 'Diciembre 2025',
+      descripcion: 'Esperando grandes cosas, empezando desde cero'
     },
     {
       id: 2,
-      titulo: 'Masterclass Internacional',
-      imagen: '🎧',
-      fecha: 'Julio 2024',
-      descripcion: 'Clases con DJs reconocidos mundialmente'
+      titulo: 'Un nuevo Comienzo',
+      imagen: EventImage2,
+      fecha: 'Septiembre 2024',
+      descripcion: 'Anímate a dar el primer paso, de cero a DJ certificado'
     },
     {
       id: 3,
-      titulo: 'Recital de Graduados',
-      imagen: '🎶',
-      fecha: 'Agosto 2024',
-      descripcion: 'Presentación de nuestros mejores estudiantes'
+      titulo: 'Nueva Sucursal',
+      imagen: EventImage3,
+      fecha: 'Octubre 2025',
+      descripcion: 'Cada vez mas cerca de vos, ahora en Caacupe'
     },
     {
       id: 4,
-      titulo: 'Festival',
-      imagen: '🎵',
-      fecha: 'Junio 2025',
-      descripcion: 'Gran evento con estudiantes'
+      titulo: 'Curso Kids',
+      imagen: EventImage4,
+      fecha: 'Diciembre 2025',
+      descripcion: 'Hay para todos, SC kids para empezar desde temprano'
     },
   ];
 
@@ -93,10 +97,10 @@ export default function ScAcademy() {
               <div className="sobre-content">
                 <p>
                   DJ Academy es una institución dedicada a la formación de DJs y productores musicales.
-                  Con más de 10 años de experiencia, hemos formado a cientos de profesionales en el arte de la música y el entretenimiento.
+                  Con pasión y experiencia, hemos formado a cientos de profesionales en el arte de la música y el entretenimiento.
                 </p>
                 <p>
-                  Nuestro equipo está compuesto por DJs certificados internacionalmente que traen su experiencia
+                  Nuestro equipo está compuesto por DJs certificados que traen su experiencia
                   directa de festivales y eventos alrededor del mundo.
                 </p>
               </div>

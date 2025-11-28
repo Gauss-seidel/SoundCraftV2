@@ -92,7 +92,7 @@ export default function Staff() {
     },
     {
       id: 5,
-      nombre: "Andrea Gimenez",
+      nombre: "Andrea Saturio",
       especialidad: "Agente administrativo",
       imagen: "🎸",
       experiencia: "6 años",
@@ -108,7 +108,7 @@ export default function Staff() {
     },
     {
       id: 6,
-      nombre: "Janni Saturno",
+      nombre: "Janni Gimenez",
       especialidad: "Community Manager",
       imagen: "🎼",
       experiencia: "7 años",
