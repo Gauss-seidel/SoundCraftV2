@@ -25,7 +25,7 @@ export default function Staff() {
     {
       id: 1,
       nombre: "Hernan Dominguez",
-      especialidad: "House & Techno",
+      especialidad: "DJ profesional",
       imagen: "🎧",
       experiencia: "15 años",
       descripcion:
@@ -56,7 +56,7 @@ export default function Staff() {
     {
       id: 3,
       nombre: "Rodas",
-      especialidad: "Drum & Bass",
+      especialidad: "DJ profesional",
       imagen: "🎚️",
       experiencia: "10 años",
       descripcion:
@@ -73,7 +73,7 @@ export default function Staff() {
       nombre: "Amanda",
       especialidad: "Agente administrativo",
       imagen: "💃",
-      experiencia: "10 años",
+      experiencia: "5 años",
       descripcion:
         "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
       certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
@@ -89,7 +89,7 @@ export default function Staff() {
       nombre: "Andrea Gimenez",
       especialidad: "Agente administrativo",
       imagen: "🎸",
-      experiencia: "7 años",
+      experiencia: "6 años",
       descripcion:
         "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
       certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
@@ -105,7 +105,7 @@ export default function Staff() {
       nombre: "Janni Saturno",
       especialidad: "Community Manager",
       imagen: "🎼",
-      experiencia: "12 años",
+      experiencia: "7 años",
       descripcion:
         "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
       certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
@@ -122,6 +122,22 @@ export default function Staff() {
       especialidad: "Administrador Web",
       imagen: "🎛️",
       experiencia: "2 años",
+      descripcion:
+        "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
+      certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
+      redes: {
+        instagram: "https://instagram.com",
+        youtube: "https://youtube.com",
+        spotify: "https://spotify.com",
+      },
+      calificacion: 5,
+    },
+    {
+      id: 8,
+      nombre: "Matias Irala",
+      especialidad: "DJ profesional",
+      imagen: "🎛️",
+      experiencia: "3 años",
       descripcion:
         "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
       certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
