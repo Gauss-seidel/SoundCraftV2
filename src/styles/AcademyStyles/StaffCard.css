@@ -42,9 +42,20 @@
 }
 
 .staff-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.staff-avatar-emoji {
   font-size: 5rem;
   position: relative;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Rating Stars */
@@ -206,6 +217,12 @@
   }
 
   .staff-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .staff-avatar-emoji {
     font-size: 5.5rem;
   }
 
@@ -235,6 +252,12 @@
   }
 
   .staff-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .staff-avatar-emoji {
     font-size: 6rem;
   }
 

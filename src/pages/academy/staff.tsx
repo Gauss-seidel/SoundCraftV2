@@ -3,6 +3,12 @@ import Background from "../../components/AcademyComponents/BackGroundAcademy";
 import StaffGrid from "../../components/AcademyComponents/StaffGrid";
 import "../../styles/AcademyStyles/StaffCard.css";
 import "../../styles/AcademyStyles/StaffGrid.css";
+import AvatarRodas from "../../assets/AcademyAssets/avatarRodas.png"
+import AvatarHernan from "../../assets/AcademyAssets/avatarHernan.png"
+import AvatarAmanda from "../../assets/AcademyAssets/avatarAmanda.png"
+import AvatarWillian from "../../assets/AcademyAssets/avatarWillian.png"
+import AvatarOsvaldo from "../../assets/AcademyAssets/avatarOsvaldo.png"
+import AvatarMati from "../../assets/AcademyAssets/avatarMati.png"
 
 interface Instructor {
   id: number;
@@ -15,7 +21,7 @@ interface Instructor {
   redes: {
     instagram?: string;
     youtube?: string;
-    spotify?: string;
+    whatsapp?: string;
   };
   calificacion: number;
 }
@@ -26,23 +32,23 @@ export default function Staff() {
       id: 1,
       nombre: "Hernan Dominguez",
       especialidad: "DJ profesional",
-      imagen: "🎧",
+      imagen: AvatarHernan,
       experiencia: "15 años",
       descripcion:
-        "Especialista en producción de House y Techno. Ha tocado en festivales internacionales y cuenta con múltiples Grammy.",
+        "Especialista en producción de House y Techno. Ha tocado en festivales internacionales y cuenta con pasión por la música.",
       certificaciones: ["Serato Certified", "Pioneer Certified", "Ableton Live Advanced"],
       redes: {
-        instagram: "https://instagram.com",
+        instagram: "https://www.instagram.com/hernandomin",
         youtube: "https://youtube.com",
-        spotify: "https://spotify.com",
+        whatsapp: "https://spotify.com",
       },
       calificacion: 5,
     },
     {
       id: 2,
       nombre: "Osvaldo Rolon",
-      especialidad: "Hip-Hop & Trap",
-      imagen: "📀",
+      especialidad: "Director",
+      imagen: AvatarOsvaldo,
       experiencia: "4 años",
       descripcion:
         "Productora y DJ con experiencia en Hip-Hop y Trap. Reconocida por sus remixes innovadores y producciones únicas.",
@@ -55,24 +61,24 @@ export default function Staff() {
     },
     {
       id: 3,
-      nombre: "Rodas",
+      nombre: "fabrizio Rodas",
       especialidad: "DJ profesional",
-      imagen: "🎚️",
-      experiencia: "10 años",
+      imagen: AvatarRodas,
+      experiencia: "9 años",
       descripcion:
-        "Pionero en Drum & Bass. Combina técnicas tradicionales con producción digital de última generación.",
-      certificaciones: ["Drum & Bass Producer Certified", "Advanced Mixing", "Vinyl Mastery"],
+        "Es conocido por su versalitidad y capacidad de cautivar con los sonidos que ofrece. Ha logrado destacar en multiples lugares del pais desde su incursión en el mundo del Djing",
+      certificaciones: ["Academia de Artes Scapini - 2013", "CONAMU - 2016 a 2018", "Audio Lab - 2023 a 2024"],
       redes: {
-        instagram: "https://instagram.com",
-        spotify: "https://spotify.com",
+        instagram: "https://www.instagram.com/rodas_dj",
+        whatsapp: "https://wa.me/595986284640",
       },
       calificacion: 5,
     },
     {
       id: 4,
-      nombre: "Amanda",
+      nombre: "Amanda Lasta",
       especialidad: "Agente administrativo",
-      imagen: "💃",
+      imagen: AvatarAmanda,
       experiencia: "5 años",
       descripcion:
         "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
@@ -80,7 +86,7 @@ export default function Staff() {
       redes: {
         instagram: "https://instagram.com",
         youtube: "https://youtube.com",
-        spotify: "https://spotify.com",
+        whatsapp: "https://spotify.com",
       },
       calificacion: 5,
     },
@@ -96,7 +102,7 @@ export default function Staff() {
       redes: {
         instagram: "https://instagram.com",
         youtube: "https://youtube.com",
-        spotify: "https://spotify.com",
+        whatsapp: "https://spotify.com",
       },
       calificacion: 5,
     },
@@ -112,23 +118,23 @@ export default function Staff() {
       redes: {
         instagram: "https://instagram.com",
         youtube: "https://youtube.com",
-        spotify: "https://spotify.com",
+        whatsapp: "https://spotify.com",
       },
       calificacion: 5,
     },
     {
       id: 7,
-      nombre: "Willian Nuñez",
+      nombre: "Willian Núñez",
       especialidad: "Administrador Web",
-      imagen: "🎛️",
+      imagen: AvatarWillian,
       experiencia: "2 años",
       descripcion:
-        "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
-      certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
+        "Entusiasta por la música, la docencia y la programación. Presentando experiencias a todos los niveles",
+      certificaciones: ["Monkey Academy 0-Jr", "Monkey Academy Jr-Mid", "Web designer"],
       redes: {
         instagram: "https://instagram.com",
         youtube: "https://youtube.com",
-        spotify: "https://spotify.com",
+        whatsapp: "https://spotify.com",
       },
       calificacion: 5,
     },
@@ -136,15 +142,15 @@ export default function Staff() {
       id: 8,
       nombre: "Matias Irala",
       especialidad: "DJ profesional",
-      imagen: "🎛️",
+      imagen: AvatarMati,
       experiencia: "3 años",
       descripcion:
         "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
-      certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
+      certificaciones: ["SC Academy DJ", "", ""],
       redes: {
         instagram: "https://instagram.com",
         youtube: "https://youtube.com",
-        spotify: "https://spotify.com",
+        whatsapp: "https://spotify.com",
       },
       calificacion: 5,
     },

@@ -11,7 +11,7 @@ interface Instructor {
   redes: {
     instagram?: string;
     youtube?: string;
-    spotify?: string;
+    whatsapp?: string;
   };
   calificacion: number;
 }
