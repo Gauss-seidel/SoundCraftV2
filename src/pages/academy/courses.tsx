@@ -23,7 +23,7 @@ export default function Courses() {
       nombre: "DJ Principiante",
       nivel: "Básico",
       duracion: "4 meses",
-      precio: "₲150.000/m",
+      precio: "₲150k/m",
       imagen: "🎵",
       descripcion:
         "Aprende los fundamentos del DJ, técnicas básicas de mezcla y equipamiento esencial.",
@@ -33,7 +33,7 @@ export default function Courses() {
       nombre: "Producción Musical",
       nivel: "Intermedio",
       duracion: "6 meses",
-      precio: "₲200.000/m",
+      precio: "₲200k/m",
       imagen: "🎧",
       descripcion:
         "Domina la producción de música con software profesional y técnicas avanzadas.",
@@ -43,7 +43,7 @@ export default function Courses() {
       nombre: "Mezcla Avanzada",
       nivel: "Avanzado",
       duracion: "8 meses",
-      precio: "₲250.000/m",
+      precio: "₲250k/m",
       imagen: "🎚️",
       descripcion:
         "Perfecciona tus habilidades de mezcla con técnicas profesionales de estudio.",
@@ -53,7 +53,7 @@ export default function Courses() {
       nombre: "Vinilo",
       nivel: "Intermedio",
       duracion: "5 meses",
-      precio: "₲180.000/m",
+      precio: "₲180k/m",
       imagen: "🪩",
       descripcion:
         "Crea beats originales y aprende la teoría musical aplicada al beatmaking.",
@@ -109,7 +109,7 @@ export default function Courses() {
                       <p className="course-description">{course.descripcion}</p>
                       <div className="course-footer">
                         <span className="course-price">{course.precio}</span>
-                        <button className="course-button">Inscribirse</button>
+                        <button className="course-button">Info</button>
                       </div>
                     </div>
                   </div>

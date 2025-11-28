@@ -32,6 +32,13 @@ export default function ScAcademy() {
       fecha: 'Agosto 2024',
       descripcion: 'Presentación de nuestros mejores estudiantes'
     },
+    {
+      id: 4,
+      titulo: 'Festival',
+      imagen: '🎵',
+      fecha: 'Junio 2025',
+      descripcion: 'Gran evento con estudiantes'
+    },
   ];
 
   // Datos de testimonios

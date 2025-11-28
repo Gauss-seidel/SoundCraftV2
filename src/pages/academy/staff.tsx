@@ -24,7 +24,7 @@ export default function Staff() {
   const instructores: Instructor[] = [
     {
       id: 1,
-      nombre: "Alex Rivera",
+      nombre: "Hernan Dominguez",
       especialidad: "House & Techno",
       imagen: "🎧",
       experiencia: "15 años",
@@ -40,10 +40,10 @@ export default function Staff() {
     },
     {
       id: 2,
-      nombre: "María González",
+      nombre: "Osvaldo Rolon",
       especialidad: "Hip-Hop & Trap",
-      imagen: "🎤",
-      experiencia: "12 años",
+      imagen: "📀",
+      experiencia: "4 años",
       descripcion:
         "Productora y DJ con experiencia en Hip-Hop y Trap. Reconocida por sus remixes innovadores y producciones únicas.",
       certificaciones: ["FL Studio Expert", "Native Instruments Certified", "Audio Engineering"],
@@ -55,10 +55,10 @@ export default function Staff() {
     },
     {
       id: 3,
-      nombre: "Carlos Mendez",
+      nombre: "Rodas",
       especialidad: "Drum & Bass",
       imagen: "🎚️",
-      experiencia: "18 años",
+      experiencia: "10 años",
       descripcion:
         "Pionero en Drum & Bass. Combina técnicas tradicionales con producción digital de última generación.",
       certificaciones: ["Drum & Bass Producer Certified", "Advanced Mixing", "Vinyl Mastery"],
@@ -70,10 +70,58 @@ export default function Staff() {
     },
     {
       id: 4,
-      nombre: "Sofia Torres",
-      especialidad: "Electrónica Experimental",
-      imagen: "🎹",
+      nombre: "Amanda",
+      especialidad: "Agente administrativo",
+      imagen: "💃",
       experiencia: "10 años",
+      descripcion:
+        "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
+      certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
+      redes: {
+        instagram: "https://instagram.com",
+        youtube: "https://youtube.com",
+        spotify: "https://spotify.com",
+      },
+      calificacion: 5,
+    },
+    {
+      id: 5,
+      nombre: "Andrea Gimenez",
+      especialidad: "Agente administrativo",
+      imagen: "🎸",
+      experiencia: "7 años",
+      descripcion:
+        "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
+      certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
+      redes: {
+        instagram: "https://instagram.com",
+        youtube: "https://youtube.com",
+        spotify: "https://spotify.com",
+      },
+      calificacion: 5,
+    },
+    {
+      id: 6,
+      nombre: "Janni Saturno",
+      especialidad: "Community Manager",
+      imagen: "🎼",
+      experiencia: "12 años",
+      descripcion:
+        "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
+      certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
+      redes: {
+        instagram: "https://instagram.com",
+        youtube: "https://youtube.com",
+        spotify: "https://spotify.com",
+      },
+      calificacion: 5,
+    },
+    {
+      id: 7,
+      nombre: "Willian Nuñez",
+      especialidad: "Administrador Web",
+      imagen: "🎛️",
+      experiencia: "2 años",
       descripcion:
         "Artista de electrónica experimental con enfoque en síntesis y sound design. Ganadora de múltiples premios internacionales.",
       certificaciones: ["Synthesis Expert", "Sound Design Master", "Reaktor Certified"],
