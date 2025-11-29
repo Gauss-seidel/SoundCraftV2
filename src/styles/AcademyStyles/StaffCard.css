@@ -170,15 +170,46 @@
 
 .social-link.instagram:hover {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 6px #dc2743, 0 0 8px #bc1888;
 }
 
 .social-link.youtube:hover {
   background: linear-gradient(135deg, #ff0000, #cc0000);
+  color: #fff;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 6px #ff0000, 0 0 8px #cc0000;
 }
 
-.social-link.spotify:hover {
+.social-link.whatsapp:hover {
   background: linear-gradient(135deg, #1DB954, #1aa34a);
+  color: #fff;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 6px #1DB954, 0 0 8px #1aa34a;
 }
+
+.social-link.tiktok:hover {
+  background: linear-gradient(135deg, #69C9D0, #EE1D52);
+  color: #fff;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 6px #69C9D0, 0 0 8px #EE1D52;
+}
+
+.social-link.github:hover {
+  background: linear-gradient(135deg, #181717, #333333);
+  color: #fff;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 6px #333333;
+}
+
+
+.social-link.github:hover {
+  background: linear-gradient(135deg, #181717, #333333); /* negro → gris oscuro */
+  color: #fff; /* asegura contraste con el fondo */
+  transition: 0.3s ease;
+}
+
 
 /* CTA Button */
 .staff-cta-button {

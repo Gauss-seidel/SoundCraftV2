@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import '../styles/stylesComponents/Footer.css';
+import { SiTiktok } from "react-icons/si"; //este si tiene para el logo de tiktok
+// import { FaInstagram } from "react-icons/fa"; //por si quiera poner otro logo
+
+
 
 interface SocialLink {
   name: string;
@@ -11,7 +15,7 @@ interface SocialLink {
 
 interface QuickLink {
   label: string;
-  to: string;       //  ← antes era onClick
+  to: string;       
 }
 
 interface FooterProps {
@@ -31,7 +35,7 @@ export const Footer: React.FC<FooterProps> = ({
   socialLinks = [
     { name: 'Facebook', icon: <Facebook size={20} />, url: 'https://www.facebook.com/p/Soundcraft-61552205183757/' },
     { name: 'Instagram', icon: <Instagram size={20} />, url: 'https://www.instagram.com/soundcraft_py/' },
-    { name: 'Youtube', icon: <Youtube size={20} />, url: '#' },
+    { name: 'TikTok', icon: <SiTiktok size={20} />, url: 'https://www.tiktok.com/@soundcraftpy' },
   ],
   quickLinks = [
     { label: 'Inicio', to: '/' },
