@@ -17,6 +17,7 @@ main {
   display: inline-block;   
   border-bottom: 2px solid var(--sc-primary); 
   padding-bottom: 4px;
+  margin-bottom: 20px;
   padding-top: 25px;
   text-align: center;            
 }

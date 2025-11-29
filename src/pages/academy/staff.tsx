@@ -3,12 +3,12 @@ import Background from "../../components/AcademyComponents/BackGroundAcademy";
 import StaffGrid from "../../components/AcademyComponents/StaffGrid";
 import "../../styles/AcademyStyles/StaffCard.css";
 import "../../styles/AcademyStyles/StaffGrid.css";
-import AvatarRodas from "../../assets/AcademyAssets/avatarRodas.png"
-import AvatarHernan from "../../assets/AcademyAssets/avatarHernan.png"
-import AvatarAmanda from "../../assets/AcademyAssets/avatarAmanda.png"
-import AvatarWillian from "../../assets/AcademyAssets/avatarWillian.png"
-import AvatarOsvaldo from "../../assets/AcademyAssets/avatarOsvaldo.png"
-import AvatarMati from "../../assets/AcademyAssets/avatarMati.png"
+import AvatarRodas from "../../assets/AcademyAssets/avatars/avatarRodas.png"
+import AvatarHernan from "../../assets/AcademyAssets/avatars/avatarHernan.png"
+import AvatarAmanda from "../../assets/AcademyAssets/avatars/avatarAmanda.png"
+import AvatarWillian from "../../assets/AcademyAssets/avatars/avatarWillian.png"
+import AvatarOsvaldo from "../../assets/AcademyAssets/avatars/avatarOsvaldo.png"
+import AvatarMati from "../../assets/AcademyAssets/avatars/avatarMati.png"
 
 interface Instructor {
   id: number;
