@@ -1,11 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight, Volume2, Zap, Music } from 'lucide-react';
 //Estilos
 import '../../styles/EventStyles/heroEvent.css';
 import '../../styles/colors.css';
-//Interdfaces
+//Interfaces
 import type { HeroEventProps } from '../../types/eventsTypes/interfaces';
+//Iconos personalizados
+import { ArrowRight, Volume2, Zap, Music } from 'lucide-react';
+import { FaMusic, FaHeadphones, FaPlay} from "react-icons/fa";
+
 
 const HeroEvent: React.FC<HeroEventProps> = ({
   title,
@@ -91,13 +94,13 @@ const HeroEvent: React.FC<HeroEventProps> = ({
 
           <div className="hero-event__visual">
             <div className="hero-event__circle hero-event__circle--1">
-              <span>🎵</span>
+              <span><FaMusic size={50} /></span>
             </div>
             <div className="hero-event__circle hero-event__circle--2">
-              <span>🎧</span>
+              <span><FaHeadphones size={90}/></span>
             </div>
             <div className="hero-event__circle hero-event__circle--3">
-              <span>🎤</span>
+              <span><FaPlay size={40}/></span>
             </div>
             <div className="hero-event__glow"></div>
           </div>

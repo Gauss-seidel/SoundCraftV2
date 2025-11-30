@@ -28,6 +28,7 @@ const Combos: React.FC<CombosProps> = ({ combos }) => {
 
   return (
     <div className="combos-page">
+      
       <ComboGrid 
         combos={combos}
         onSelectCombo={setSelectedComboId}

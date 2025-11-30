@@ -12,8 +12,9 @@ import HeroEvent from '../../components/EventComponents/HeroEvent';
 const ScEvents: React.FC = () =>  {
   return (
     <>
-    <Background />
+    
     <div className="home">
+    <Background />
       {/* Hero Banner */}
       <HeroEvent 
         title="Sonido Profesional para Tus Eventos"

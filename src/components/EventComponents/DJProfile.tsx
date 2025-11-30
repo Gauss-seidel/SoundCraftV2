@@ -86,7 +86,7 @@ const DJProfile: React.FC<DJProfileProps> = ({ dj, onBack }) => {
                       style={{
                         width: '97%',
                         height: '97%',
-                        objectFit: 'cover',
+                        objectFit: 'fill',
                         borderRadius: '6px'
                       }}
                     />
