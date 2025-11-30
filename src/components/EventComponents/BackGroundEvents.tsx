@@ -1,3 +1,4 @@
+//Estilos
 import '../../styles/EventStyles/backgroundEvents.css';
 
 export default function BackgroundEventsAbstract() {

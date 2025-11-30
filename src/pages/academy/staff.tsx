@@ -9,6 +9,7 @@ import AvatarAmanda from "../../assets/AcademyAssets/avatars/avatarAmanda.png"
 import AvatarWillian from "../../assets/AcademyAssets/avatars/avatarWillian.png"
 import AvatarOsvaldo from "../../assets/AcademyAssets/avatars/avatarOsvaldo.png"
 import AvatarMati from "../../assets/AcademyAssets/avatars/avatarMati.png"
+import AvatarJanni from "../../assets/AcademyAssets/avatars/avatarJanni.png"
 
 interface Instructor {
   id: number;
@@ -95,26 +96,10 @@ export default function Staff() {
       calificacion: 5,
     },
     {
-      id: 5,
-      nombre: "Andrea Saturio",
-      especialidad: "Agente administrativo",
-      imagen: "🎸",
-      experiencia: "6 años",
-      descripcion:
-        "Encargado de la organización y coordinación administrativa de la empresa. Gestiona procesos internos, documentación y recursos para asegurar un funcionamiento eficiente y ordenado.",
-      certificaciones: ["Coordinación de Servicios", "Atención al Cliente", "Gestión de Consultas"],
-      redes: {
-        instagram: "https://instagram.com",
-        youtube: "https://youtube.com",
-        whatsapp: "https://spotify.com",
-      },
-      calificacion: 5,
-    },
-    {
       id: 6,
       nombre: "Janni Gimenez",
       especialidad: "Community Manager",
-      imagen: "🎼",
+      imagen: AvatarJanni,
       experiencia: "7 años",
       descripcion:
         "Community Manager con experiencia en la gestión de redes sociales, creación de contenido y construcción de comunidades digitales. Se enfoca en fortalecer la presencia online de marcas, interactuar con la audiencia y optimizar la comunicación en distintas plataformas.",

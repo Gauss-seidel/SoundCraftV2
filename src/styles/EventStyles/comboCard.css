@@ -1,0 +1,140 @@
+
+  .combo-card {
+    background-color: var(--sc-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 174, 239, 0.2);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .combo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 174, 239, 0.3);
+    border-color: var(--sc-primary);
+  }
+  
+  .combo-card__image {
+    background: linear-gradient(135deg, var(--sc-primary) 0%, var(--sc-secondary) 100%);
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+  }
+  
+  .combo-card__content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+  }
+  
+  .combo-card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--sc-text);
+    margin: 0;
+  }
+  
+  .combo-card__description {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  
+  .combo-card__specs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid rgba(0, 174, 239, 0.1);
+    border-bottom: 1px solid rgba(0, 174, 239, 0.1);
+  }
+  
+  .combo-card__spec {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #d0d0d0;
+  }
+  
+  .combo-card__icon {
+    color: var(--sc-primary);
+    flex-shrink: 0;
+  }
+  
+  .combo-card__equipment {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .combo-card__equipment-label {
+    font-size: 0.8rem;
+    color: #999999;
+    margin: 0;
+  }
+  
+  .combo-card__equipment-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .combo-card__equipment-list li {
+    font-size: 0.85rem;
+    color: #b0b0b0;
+  }
+  
+  .combo-card__equipment-more {
+    color: var(--sc-primary) !important;
+    font-weight: 600;
+  }
+  
+  .combo-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 174, 239, 0.1);
+  }
+  
+  .combo-card__price {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--sc-primary);
+  }
+  
+  .combo-card__button {
+    background: linear-gradient(135deg, var(--sc-primary) 0%, var(--sc-accent) 100%);
+    color: var(--sc-text);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .combo-card__button:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 174, 239, 0.4);
+  }
+  
+  .combo-card__button:active {
+    transform: translateX(2px);
+  }
