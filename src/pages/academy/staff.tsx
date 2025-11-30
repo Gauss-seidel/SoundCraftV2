@@ -31,14 +31,7 @@ export default function Staff() {
         </div>
       </section>
 
-      <Footer
-        quickLinks={[
-          { label: "Inicio", to: "/" },
-          { label: "Cursos", to: "/scacademy/cursos" },
-          { label: "Staff", to: "/scacademy/staff" },
-          { label: "Contacto", to: "/scacademy/contacto" },
-        ]}
-      />
+      <Footer />
     </>
   );
 }

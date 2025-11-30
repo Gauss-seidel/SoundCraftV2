@@ -15,13 +15,12 @@ const ScEvents: React.FC = () =>  {
   useScrollTop();
   return (
     <>
-    
     <div className="home">
     <Background />
       {/* Hero Banner */}
       <HeroEvent 
-        title="Sonido Profesional para Tus Eventos"
-        subtitle="Equipos de audio de última generación y DJs expertos para hacer tu evento inolvidable."
+        title="SoundCraft Eventos"
+        subtitle="Alquiler de equipos de audio de última generación y DJs expertos para hacer tu evento inolvidable."
         primaryButtonText="Explorar Combos"
         secondaryButtonText="Ver DJs Disponibles"
         primaryLinkTo="/scevents/combos"

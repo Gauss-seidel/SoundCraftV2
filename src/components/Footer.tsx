@@ -39,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({
     { name: 'TikTok', icon: <SiTiktok size={20} />, url: 'https://www.tiktok.com/@soundcraftpy' },
   ],
   quickLinks = [
-    { label: 'Inicio', to: '/scacademy' },
+    { label: 'SC Academy', to: '/scacademy' },
     { label: 'Cursos', to: '/scacademy/cursos' },
     { label: 'Contacto', to: '/scacademy/contacto' },
     { label: 'Staff', to: '/scacademy/staff' },
