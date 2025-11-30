@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
+//Estilos
 import '../../styles/AcademyStyles/GallerySection.css';
-
-interface Event {
-  id: number;
-  titulo: string;
-  fecha: string;
-  imagen?: string;
-  descripcion?: string;
-  ubicacion?: string;
-}
+//Interfaces
+import type { Event } from '../../types/academyTypes/interfaces';
 
 interface GallerySectionProps {
   titulo?: string;

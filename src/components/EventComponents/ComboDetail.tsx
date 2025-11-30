@@ -4,6 +4,9 @@ import { Users, Volume2, Check } from 'lucide-react';
 import '../../styles/EventStyles/comboDetail.css';
 //Interfaces
 import type { Combo } from '../../types/eventsTypes/interfaces';
+//hooks
+import { useScrollTop } from "../../hooks/useScrollTop";
+
 
 
 
@@ -13,6 +16,7 @@ interface ComboDetailProps {
 }
 
 const ComboDetail: React.FC<ComboDetailProps> = ({ combo, onBack }) => {
+  useScrollTop();
   return (
     <div className="combo-detail">
       <div className="combo-detail__container">

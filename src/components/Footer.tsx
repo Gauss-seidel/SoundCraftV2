@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+//Iconos
 import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import '../styles/stylesComponents/Footer.css';
 import { SiTiktok } from "react-icons/si"; //este si tiene para el logo de tiktok
@@ -38,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({
     { name: 'TikTok', icon: <SiTiktok size={20} />, url: 'https://www.tiktok.com/@soundcraftpy' },
   ],
   quickLinks = [
-    { label: 'Inicio', to: '/' },
+    { label: 'Inicio', to: '/scacademy' },
     { label: 'Cursos', to: '/scacademy/cursos' },
     { label: 'Contacto', to: '/scacademy/contacto' },
     { label: 'Staff', to: '/scacademy/staff' },

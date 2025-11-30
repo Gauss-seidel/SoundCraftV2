@@ -1,16 +1,9 @@
 import React from 'react';
+//Estilos
 import '../../styles/AcademyStyles/CourseCard.css';
+//Interfaces
+import type { CourseCardProps } from '../../types/academyTypes/interfaces'
 
-interface CourseCardProps {
-  id: number;
-  nombre: string;
-  nivel: string;
-  duracion: string;
-  precio: string;
-  imagen?: string;
-  descripcion?: string;
-  onViewDetails: (id: number) => void;
-}
 
 export const CourseCard: React.FC<CourseCardProps> = ({
   id,

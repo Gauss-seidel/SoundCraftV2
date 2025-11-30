@@ -1,5 +1,43 @@
 .combos-page {
+  position: relative;
+  z-index: 10;
+}
+
+.combos-page ~ div {
+  z-index: -1;
+}
+
+  .bottonVolver {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'FuenteTitulos', sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: 500;
+    color: var(--sc-text);
+    background: transparent;
+    border: 1.5px solid rgba(0, 174, 239, 0.4);
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
     position: relative;
-    z-index: 1;
-    background-color: var(--sc-bg);
+    z-index: 10;
   }
+  .bottonVolver:active {
+    transform: scale(0.98);
+  }
+/* Arrow Icon (si quieres que aparezca una flecha) */
+.bottonVolver::after {
+  content: '←';
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.bottonVolver:hover::after {
+  transform: translateX(-4px);
+}

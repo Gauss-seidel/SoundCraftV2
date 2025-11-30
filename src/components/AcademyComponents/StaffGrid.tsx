@@ -1,20 +1,8 @@
+//Componentes
 import StaffCard from "./StaffCard";
+//Interfaces
+import type { Instructor } from "../../types/academyTypes/interfaces";
 
-interface Instructor {
-  id: number;
-  nombre: string;
-  especialidad: string;
-  imagen: string;
-  experiencia: string;
-  descripcion: string;
-  certificaciones: string[];
-  redes: {
-    instagram?: string;
-    youtube?: string;
-    whatsapp?: string;
-  };
-  calificacion: number;
-}
 
 interface StaffGridProps {
   instructores: Instructor[];

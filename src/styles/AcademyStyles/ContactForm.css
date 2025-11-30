@@ -167,7 +167,6 @@
   position: relative;
   z-index: 10;
   padding: 60px 20px;
-  background: linear-gradient(135deg, rgba(26, 25, 25, 0.95) 0%, rgba(15, 15, 30, 0.95) 100%);
 }
 
 .contacto-container {

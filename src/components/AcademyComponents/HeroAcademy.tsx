@@ -1,15 +1,9 @@
+import { useNavigate } from 'react-router-dom';
+//Estilos
 import '../../styles/AcademyStyles/HeroImage.css'
 import '../../styles/colors.css'
-import { useNavigate } from 'react-router-dom';
-
-interface HeroImageProps {
-  title: string;
-  subtitle: string;
-  buttonText: string;
-  linkTo?: string;
-  onButtonClick?: () => void;
-  backgroundImage?: string;
-}
+//Interfaces
+import type { HeroImageProps } from '../../types/academyTypes/interfaces';
 
 export default function HeroImage({
   title,

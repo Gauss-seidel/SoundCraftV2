@@ -1,37 +1,19 @@
+//Iconos personalizados
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { FaBriefcase } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+//Interfaces
+import type { Instructor } from "../../types/academyTypes/interfaces";
 
 
-
-
-interface Instructor {
-    id: number;
-    nombre: string;
-    especialidad: string;
-    imagen: string;
-    experiencia: string;
-    descripcion: string;
-    certificaciones: string[];
-    redes: {
-      instagram?: string;
-      youtube?: string;
-      whatsapp?: string;
-      tiktok?: string;
-      github?: string;
-    };
-    calificacion: number;
-  }
-  
   interface StaffCardProps {
     instructor: Instructor;
   }
   
   export default function StaffCard({ instructor }: StaffCardProps) {
-    // Función para determinar si la imagen es una URL/path o un emoji
     const isImageUrl = (img: string): boolean => {
       return img.includes('/') || img.startsWith('http') || /\.(png|jpg|jpeg|gif|svg|webp)$/i.test(img);
     };
@@ -128,7 +110,7 @@ interface Instructor {
           </div>
   
           {/* CTA Button */}
-          <button className="staff-cta-button">Ver Perfil Completo</button>
+          {/* <button className="staff-cta-button">Ver Perfil Completo</button> */}
         </div>
       </div>
     );

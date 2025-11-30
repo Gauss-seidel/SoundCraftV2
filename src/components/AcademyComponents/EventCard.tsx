@@ -1,15 +1,8 @@
 import React, { useState } from 'react';
+//Estilos
 import '../../styles/AcademyStyles/EventCard.css';
-
-interface EventCardProps {
-  id: number;
-  titulo: string;
-  fecha: string;
-  imagen?: string;
-  descripcion?: string;
-  ubicacion?: string;
-  onViewEvent: (id: number) => void;
-}
+//Interfaces
+import type { EventCardProps } from '../../types/academyTypes/interfaces';
 
 export const EventCard: React.FC<EventCardProps> = ({
   id,

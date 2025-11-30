@@ -1,6 +1,6 @@
 .dj-grid {
   padding: 48px 0;
-  background-color: var(--sc-bg);
+
   position: relative;
   z-index: 1;
 }

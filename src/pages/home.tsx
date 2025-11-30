@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom';
+//Logos
 import academialogo from '../assets/scacademylogo.png';
 import eventlogo from '../assets/sceventlogo.png';
+//Estilos
 import '../styles/colors.css';
 import '../styles/fonts.css';
 import "../styles/App.css";
-import { Link } from 'react-router-dom';
+//Componentes
 import BackgroundHome from '../components/BackGroundHome';
 
 export default function Home() {

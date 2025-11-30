@@ -1,13 +1,9 @@
 import React from 'react';
+//Estilos
 import '../../styles/AcademyStyles/TestimonialCard.css';
+//Interfaces
+import type { TestimonialCardProps } from '../../types/academyTypes/interfaces';
 
-interface TestimonialCardProps {
-  nombre: string;
-  texto: string;
-  rol?: string;
-  avatar?: string;
-  calificacion?: number;
-}
 
 export const TestimonialCard: React.FC<TestimonialCardProps> = ({
   nombre,

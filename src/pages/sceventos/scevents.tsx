@@ -7,9 +7,12 @@ import '../../styles/EventStyles/scevents.css'
 //Componentes
 import Background from '../../components/EventComponents/BackGroundEvents';
 import HeroEvent from '../../components/EventComponents/HeroEvent';
+//hooks
+import { useScrollTop } from "../../hooks/useScrollTop";
 
 
 const ScEvents: React.FC = () =>  {
+  useScrollTop();
   return (
     <>
     

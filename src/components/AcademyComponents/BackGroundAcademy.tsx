@@ -1,3 +1,4 @@
+//Estilos
 import '../../styles/AcademyStyles/BackGround.css';
 
 export default function Background() {

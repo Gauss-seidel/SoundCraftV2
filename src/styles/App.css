@@ -1,17 +1,5 @@
 @import './fonts.css';
 
-:root {
-  /* Brand Colors */
-  --sc-primary: #00AEEF;
-  --sc-secondary: #8E24AA;
-  --sc-accent: #3F51B5;
-  --sc-deep: #4A148C;
-
-  /* Neutrals */
-  --sc-text: #ffffff;
-  --sc-bg: #1a1919;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -219,22 +207,68 @@ h6 {
   font-family: 'FuenteTitulos', sans-serif;
   font-size: clamp(2.5rem, 8vw, 5rem);
   color: var(--sc-text);
-  white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid var(--sc-primary);
-  width: 0ch;
-  animation: typing 2s steps(13) forwards, blink 0.7s infinite;
+  animation: blink 0.7s infinite;
   letter-spacing: clamp(1px, 0.5vw, 2px);
   position: relative;
   z-index: 10;
+  display: inline-block;
 }
 
-@keyframes typing {
-  from {
-    width: 0ch;
+/* Desktop - SOUNDCRAFT PY - Ancho completo */
+@media (min-width: 1024px) {
+  .titleType {
+    white-space: nowrap;
+    max-width: 0;
+    animation: typing-desktop 2s steps(13) forwards, blink 0.7s infinite;
   }
-  to {
-    width: 13ch;
+
+  @keyframes typing-desktop {
+    from {
+      max-width: 0;
+    }
+    to {
+      max-width: 100%;
+    }
+  }
+}
+
+/* Tablet - SOUND CRAFT PY */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .titleType {
+    white-space: nowrap;
+    max-width: 0;
+    animation: typing-tablet 2s steps(13) forwards, blink 0.7s infinite;
+  }
+
+  @keyframes typing-tablet {
+    from {
+      max-width: 0;
+    }
+    to {
+      max-width: 100%;
+    }
+  }
+}
+
+/* Mobile - SOUND CRAFT PY (puede dividirse) */
+@media (max-width: 767px) {
+  .titleType {
+    white-space: normal;
+    max-width: 0;
+    animation: typing-mobile 2.4s steps(13) forwards, blink 0.7s infinite;
+    line-height: 1.2;
+    word-spacing: 100vw;
+  }
+
+  @keyframes typing-mobile {
+    from {
+      max-width: 0;
+    }
+    to {
+      max-width: 100%;
+    }
   }
 }
 
@@ -243,7 +277,6 @@ h6 {
     border-color: transparent;
   }
 }
-
 /* Title Container */
 .titleContainer {
   display: flex;

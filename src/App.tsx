@@ -12,7 +12,9 @@ import Combos from "./pages/sceventos/combos.tsx"
 import SoundCraftNav from "./components/SoundCraftNav.tsx";
 //datos
 import { djsData } from './assets/data/eventsData/DjsData.ts';
-import { combosData } from './/assets/data/eventsData/CombosData.ts';
+import { combosData } from './assets/data/eventsData/CombosData.ts';
+import { courses } from './assets/data/academyData/courseData.ts';
+
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
       <Route path="/scevents/combos" element={<Combos combos={combosData} />} />
       <Route path="/scacademy" element={<ScAcademy />} />
       <Route path="/scacademy/staff" element={<Staff />} />
-      <Route path="/scacademy/cursos" element={<Courses />} />
+      <Route path="/scacademy/cursos" element={<Courses courses={courses} />} />
       <Route path="/scacademy/contacto" element={<ContactUS />} />
       <Route path="*" element={<div>Página no encontrada</div>} />
       </Routes>

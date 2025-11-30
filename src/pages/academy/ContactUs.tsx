@@ -1,11 +1,15 @@
+//Componentes
 import { ContactForm } from "../../components/ContactForm";
 import { Footer } from "../../components/Footer";
 import Background from "../../components/AcademyComponents/BackGroundAcademy";
+//Estilos
 import '../../styles/AcademyStyles/ContactForm.css'
 import '../../styles/colors.css'
-
+//hooks
+import { useScrollTop } from "../../hooks/useScrollTop";
 
 export default function ContactUS() {
+  useScrollTop();
   const handleContactSubmit = async (formData: any) => {
     console.log("Formulario enviado:", formData);
     // Aquí iría tu lógica de envío (API, email, etc) que no hay, pa el show nomas

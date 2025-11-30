@@ -1,15 +1,9 @@
 import React from 'react';
+//Estilos
 import '../../styles/AcademyStyles/CoursesGrid.css';
+//Interfaces
+import type { Course } from '../../types/academyTypes/interfaces';
 
-interface Course {
-  id: number;
-  nombre: string;
-  nivel: string;
-  duracion: string;
-  precio: string;
-  imagen?: string;
-  descripcion?: string;
-}
 
 interface CoursesGridProps {
   titulo?: string;

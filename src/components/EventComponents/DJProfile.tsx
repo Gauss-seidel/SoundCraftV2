@@ -4,6 +4,8 @@ import { Star } from 'lucide-react';
 import '../../styles/EventStyles/djProfile.css';
 //Interfaces
 import type { DJ } from '../../types/eventsTypes/interfaces'
+//hooks
+import { useScrollTop } from "../../hooks/useScrollTop";
 
 interface DJProfileProps {
   dj: DJ;
@@ -11,6 +13,7 @@ interface DJProfileProps {
 }
 
 const DJProfile: React.FC<DJProfileProps> = ({ dj, onBack }) => {
+  useScrollTop();
   return (
     <div className="dj-profile">
       <div className="dj-profile__container">
